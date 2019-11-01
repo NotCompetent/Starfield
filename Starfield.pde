@@ -36,13 +36,13 @@ class Particle
 	{
 		myX=myX + Math.cos(myAngle)*mySpeed;
 		myY=myY + Math.sin(myAngle)*mySpeed;
-		if(myX>Math.pow((Math.pow(250,2)+Math.pow(250,2)),.5)||myX<0){
+		if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>750 || (Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)<0)){
 			myX = 250;
 			myY = 250;
-		}else if(myY>Math.pow((Math.pow(250,2)+Math.pow(250,2)),.5)||myY<0){
-			myX = 250;
-			myY = 250;
-		}
+		}//else if(myY>Math.pow((Math.pow(250,2)+Math.pow(250,2)),.5)||myY<0){
+		//	myX = 250;
+		//	myY = 250;
+		//} || (Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>500)
 	}
 	void show()
 	{
