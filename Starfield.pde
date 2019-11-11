@@ -19,7 +19,7 @@ void draw()
 	fill(75);
 	rect(-50,-50,100,100);
 	fill(30);
-	ellipse(0,0,75,75);
+	ellipse(40,90,75,75);
 	fill(0);
 	ellipse(0,0,30,30);
 	fill(255);
