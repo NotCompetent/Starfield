@@ -78,7 +78,7 @@ class OddballParticle extends Particle//inherits from Particle
   }
   
   void move(){
-  	myX = myX + (int)(Math.random()*10)-5;
+  	myX = myX + (int)(Math.random()*11)-6;
   }
   
   void show(){
@@ -95,7 +95,7 @@ class OddballParticle extends Particle//inherits from Particle
        fill(0,0,0);
        ellipse((float)myX,(float)myY-25,30,30);
        //eyes
-       stroke(255,255,255);
+       stroke(0,0,0);
        beginShape();
        vertex((float)myX+4,(float)myY+10);
        vertex((float)myX+7,(float)myY+12);
