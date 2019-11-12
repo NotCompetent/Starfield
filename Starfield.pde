@@ -97,12 +97,21 @@ class OddballParticle extends Particle//inherits from Particle
        //eyes
        stroke(255,255,255);
        beginShape();
-       vertex((float)myX+2,(float)myY-2);
-       vertex((float)myX+4,(float)myY-4);
+       vertex((float)myX+4,(float)myY+10);
+       vertex((float)myX+7,(float)myY+12);
        endShape(CLOSE);
        beginShape();
-       vertex((float)myX+2,(float)myY-2);
-       vertex((float)myX+4,(float)myY);
+       vertex((float)myX+4,(float)myY+10);
+       vertex((float)myX+7,(float)myY+8);
+       endShape(CLOSE);
+
+       beginShape();
+       vertex((float)myX-4,(float)myY+10);
+       vertex((float)myX-7,(float)myY+12);
+       endShape(CLOSE);
+       beginShape();
+       vertex((float)myX-4,(float)myY+10);
+       vertex((float)myX-7,(float)myY+8);
        endShape(CLOSE);
          //fill(255,255,255);
        //ellipse((float)myX+5,(float)myY-25,10,10);
