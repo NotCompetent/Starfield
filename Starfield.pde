@@ -19,7 +19,7 @@ void draw()
 	fill(75);
 	rect(-50,-50,100,100);
 	fill(30);
-	ellipse(40,90,75,75);
+	ellipse(0,0,75,75);
 	fill(0);
 	ellipse(0,0,30,30);
 	fill(255);
@@ -40,22 +40,21 @@ class Particle
 		myY = 0;
 		mySpeed = (int)((Math.random()*4+5));
 		myAngle = Math.random()*2*Math.PI;
-		myColor = 255;
 	}
 	void move()
 	{
 		myX=myX + Math.cos(myAngle)*mySpeed;
 		myY=myY + Math.sin(myAngle)*mySpeed;
-		if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>400 && mySpeed ==7 ){
+		if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>500 && mySpeed ==7 ){
 			myX = 0;
 			myY = 0;
-		}else if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>300 && mySpeed ==6 ){
+		}else if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>400 && mySpeed ==6 ){
 			myX = 0;
 			myY = 0;
-		}else if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>500 && mySpeed ==8 ){
+		}else if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>600 && mySpeed ==8 ){
 			myX = 0;
 			myY = 0;
-		}else if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>600 && mySpeed ==9 ){
+		}else if(Math.pow((Math.pow(myX,2)+Math.pow(myY,2)),.5)>700 && mySpeed ==9 ){
 			myX = 0;
 			myY = 0;
 		}
