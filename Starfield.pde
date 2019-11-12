@@ -79,7 +79,7 @@ class OddballParticle extends Particle//inherits from Particle
   //hello testing
   
   void move(){
-  	myX = myX + (int)(Math.random()*11)-6;
+  	myX = myX + (int)(Math.random()*11)-5;
   }
   
   void show(){
