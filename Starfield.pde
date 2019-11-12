@@ -76,6 +76,7 @@ class OddballParticle extends Particle//inherits from Particle
     mySpeed = 0;
     myAngle = 0;
   }
+  //hello testing
   
   void move(){
   	myX = myX + (int)(Math.random()*11)-6;
