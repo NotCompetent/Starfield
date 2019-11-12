@@ -9,7 +9,7 @@ void setup()
   for(int i = 0; i < alice.length; i++){
     //t = (int)(Math.random()*0)(int)(Math.random()*0);
     alice[i]= new Particle();
-    alice[0] = new OddballParticle();
+    alice[1] = new OddballParticle();
   } 
 }
 void draw()
